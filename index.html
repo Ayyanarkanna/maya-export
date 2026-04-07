@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAYA EXPORT | Global Logistics</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --maya-blue: #1e3c72;
+            --maya-gradient: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+        }
+        
+        .navbar-brand {
+            letter-spacing: 1px;
+        }
+
+        .hero-section {
+            padding: 80px 0;
+            background: var(--maya-gradient);
+            color: white;
+            border-bottom: 5px solid #0d6efd;
+        }
+
+        .main-title-display {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            display: inline-block;
+            padding: 10px 30px;
+            border-radius: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 20px;
+        }
+
+        .transport-card {
+            transition: all 0.3s ease;
+            border: 1px solid #eee;
+            border-bottom: 4px solid transparent;
+            border-radius: 15px;
+        }
+
+        .transport-card:hover {
+            transform: translateY(-10px);
+            border-bottom: 4px solid #0d6efd;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .icon-box {
+            font-size: 3.5rem;
+            color: #0d6efd;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background: #111;
+            color: #888;
+            padding: 50px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="bi bi-box-seam-fill me-2 text-primary"></i>MAYA EXPORT
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#modes">Transport</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Network</a></li>
+                    <li class="nav-item"><a class="btn btn-primary btn-sm ms-lg-3 mt-2 mt-lg-0" href="#contact">Contact Maya</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center">
+        <div class="container">
+            <div class="main-title-display">
+                <span class="fw-light">Official Portal</span>
+            </div>
+            <h1 class="display-2 fw-black mb-3" style="font-weight: 900;">MAYA EXPORT</h1>
+            <p class="lead mb-5 opacity-75">Your Premier Partner in Worldwide Freight & Multi-modal Logistics.</p>
+            
+            <div class="d-grid gap-2 d-md-block">
+                <button class="btn btn-light btn-lg px-5 rounded-pill me-md-2 shadow">Request Quote</button>
+                <button class="btn btn-outline-light btn-lg px-5 rounded-pill">Track Cargo</button>
+            </div>
+        </div>
+    </header>
+
+    <section id="modes" class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col">
+                    <h2 class="fw-bold">Maya Export Channels</h2>
+                    <hr class="mx-auto" style="width: 50px; height: 3px; background: #0d6efd; opacity: 1;">
+                    <p class="text-muted">Global delivery solutions tailored for your business.</p>
+                </div>
+            </div>
+            
+            <div class="row g-4 text-center">
+                <div class="col-md-3">
+                    <div class="card h-100 p-4 transport-card">
+                        <div class="card-body">
+                            <div class="icon-box"><i class="bi bi-airplane-engines"></i></div>
+                            <h3 class="h5 card-title fw-bold">Flight</h3>
+                            <p class="card-text text-muted small">Express air cargo for urgent international shipping.</p>
+                            <span class="badge rounded-pill bg-primary px-3">Air Maya</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card h-100 p-4 transport-card">
+                        <div class="card-body">
+                            <div class="icon-box"><i class="bi bi-train-front"></i></div>
+                            <h3 class="h5 card-title fw-bold">Train</h3>
+                            <p class="card-text text-muted small">Continental rail logistics for heavy bulk goods.</p>
+                            <span class="badge rounded-pill bg-success px-3">Rail Maya</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card h-100 p-4 transport-card">
+                        <div class="card-body">
+                            <div class="icon-box"><i class="bi bi-truck"></i></div>
+                            <h3 class="h5 card-title fw-bold">Truck</h3>
+                            <p class="card-text text-muted small">Reliable road transport and last-mile delivery.</p>
+                            <span class="badge rounded-pill bg-warning text-dark px-3">Road Maya</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card h-100 p-4 transport-card">
+                        <div class="card-body">
+                            <div class="icon-box"><i class="bi bi-ship-wheel"></i></div>
+                            <h3 class="h5 card-title fw-bold">Ship</h3>
+                            <p class="card-text text-muted small">Strategic ocean freight for large volume containers.</p>
+                            <span class="badge rounded-pill bg-info text-dark px-3">Sea Maya</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container text-center">
+            <h4 class="text-white mb-4">MAYA EXPORT SYSTEMS</h4>
+            <p class="mb-4">Connecting continents through efficient logistics.</p>
+            <div class="d-flex justify-content-center gap-4 mb-4">
+                <a href="#" class="text-white h5"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white h5"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="text-white h5"><i class="bi bi-twitter-x"></i></a>
+            </div>
+            <hr class="bg-secondary">
+            <p class="small mb-0">&copy; 2026 Maya Export Global. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
